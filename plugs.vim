@@ -29,6 +29,7 @@ endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'benekastah/neomake'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'jodosha/vim-godebug'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
