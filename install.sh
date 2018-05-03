@@ -14,7 +14,7 @@ case "$(uname -s)" in
     sudo apt-get install -y software-properties-common
     sudo add-apt-repository -y ppa:neovim-ppa/unstable
     sudo apt-get update -y
-    sudo apt-get install -y neovim python3-dev python3-pip exuberant-ctags
+    sudo apt-get install -y neovim python3-dev python3-pip
     ;;
   *)
     echo 'OS not detected'
