@@ -26,7 +26,7 @@ nnoremap <leader><space> :noh<cr>
 
 " Saving and buffer stuff
 " nmap <leader><ESC> :wqa!<CR>
-nmap <leader>q :q!<CR>
+nmap <leader>q :q<CR>
 nmap <leader>w :w!<CR>
 
 " Switch between / delete buffers
