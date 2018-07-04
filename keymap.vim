@@ -18,7 +18,7 @@ vnoremap / /\v
 nmap <CR> o<Esc>
 
 " Rotating among results
-map <C-n> :cn<CR>
+map <C-i> :cn<CR>
 map <C-p> :cp<CR>
 
 " Clear search
@@ -155,6 +155,9 @@ au FileType go nmap <F8> :TagbarToggle<CR>
 
 " Vim tags
 au FileType ruby nnoremap t <C-]>
+
+" Delete without copying (blackhole register)
+map <leader><BS> "_d
 
 if has('nvim')
   nmap <BS> <C-W>h
