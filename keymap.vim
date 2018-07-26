@@ -152,6 +152,7 @@ au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <F8> :TagbarToggle<CR>
+au FileType go nmap <Leader>e <Plug>(go-iferr)
 
 " Vim tags
 au FileType ruby nnoremap t <C-]>
