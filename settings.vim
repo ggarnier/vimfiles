@@ -82,6 +82,8 @@ let g:go_highlight_types = 1
 let g:go_fmt_command = "goimports"
 let g:go_fmt_fail_silently = 1
 let g:go_fmt_options = {'gofmt': '-s'}
+"let g:go_auto_sameids = 1
+"let g:go_auto_type_info = 1
 let g:go_addtags_transform = "snakecase"
 
 let NERDTreeMapOpenVSplit='v'

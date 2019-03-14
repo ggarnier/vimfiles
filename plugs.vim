@@ -9,8 +9,9 @@ Plug 'szw/vim-maximizer'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 Plug 'dyng/ctrlsf.vim'
-Plug 'tpope/vim-obsession' " Dependency for vim-prosession
-Plug 'dhruvasagar/vim-prosession'
+"Plug 'tpope/vim-obsession' " Dependency for vim-prosession
+"Plug 'dhruvasagar/vim-prosession'
+Plug 'jremmen/vim-ripgrep'
 
 " ======= Vim improvments ===
 Plug 'vim-scripts/bufkill.vim'
@@ -21,6 +22,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'Raimondi/delimitMate'
 Plug 'tomtom/tcomment_vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'mtth/scratch.vim'
 
 function! DoRemote(arg)
   UpdateRemotePlugins
@@ -28,6 +30,7 @@ endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'benekastah/neomake'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
@@ -36,5 +39,7 @@ Plug 'Shougo/neosnippet-snippets'
 
 " ====== Languages ==========
 Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'godoctor/godoctor.vim'
+
 " Add plugins to &runtimepath
 call plug#end()
