@@ -15,6 +15,9 @@ case "$(uname -s)" in
     sudo add-apt-repository -y ppa:neovim-ppa/unstable
     sudo apt-get update -y
     sudo apt-get install -y neovim python3-dev python3-pip
+    if [ `which npm` ]; then
+      npm install -g neovim
+    fi
     ;;
   *)
     echo 'OS not detected'

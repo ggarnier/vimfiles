@@ -36,6 +36,8 @@ Plug 'tpope/vim-rhubarb'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 
+" ====== JS ==========
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
 " Add plugins to &runtimepath
 call plug#end()

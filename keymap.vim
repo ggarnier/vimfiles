@@ -143,6 +143,14 @@ inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
 
 nnoremap <silent>mm :MaximizerToggle<CR>
 
+" coc.vim
+nmap <silent> t <Plug>(coc-definition)
+nmap <silent> <leader>r <Plug>(coc-references)
+" nmap <silent> <leader>dj <Plug>(coc-implementation)
+nmap <silent> [e <Plug>(coc-diagnostic-prev)
+nmap <silent> ]e <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>n <Plug>(coc-rename)
+
 " Vim tags
 au FileType ruby nnoremap t <C-]>
 
