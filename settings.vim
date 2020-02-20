@@ -53,7 +53,16 @@ autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 
 autocmd FileType python set sw=4 sts=4 et
 autocmd BufRead *.md  set ai formatoptions=tcroqn2 comments=n:&gt;
 autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
-autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace"
+fun! StripTrailingWhitespace()
+    " Only strip if the b:noStripeWhitespace variable isn't set
+		"if &ft =~ '*.snap'
+    if exists('b:noStripWhitespace')
+        return
+    endif
+    %s/\s\+$//e
+endfun
+autocmd BufWritePre * call StripTrailingWhitespace()
+autocmd BufRead *.js.snap,*.jsx.snap,*.markdown,*.md let b:noStripWhitespace=1
 
 " ======= EasyMotion ================
 nmap s <Plug>(easymotion-overwin-f2)
@@ -67,7 +76,8 @@ map <Leader>k <Plug>(easymotion-k)
 
 
 " CTRL P
-let g:ctrlp_custom_ignore = 'deps\|_build\|vendor'
+let g:ctrlp_custom_ignore = 'deps\|_build\|vendor\|node_modules\|coverage'
+let g:ctrlsf_ackprg = 'ripgrep.rg'
 
 " Vim Go
 let g:go_highlight_functions = 1
