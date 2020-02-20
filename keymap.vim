@@ -143,17 +143,6 @@ inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
 
 nnoremap <silent>mm :MaximizerToggle<CR>
 
-" VIM-GO keymappings
-au FileType go nmap t <Plug>(go-def)
-au FileType go nmap <Leader>gds <Plug>(go-def-split)
-au FileType go nmap <Leader>gdv <Plug>(go-def-vertical)
-au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
-au FileType go nmap <Leader>gd <Plug>(go-doc)
-au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
-au FileType go nmap <Leader>i <Plug>(go-info)
-au FileType go nmap <F8> :TagbarToggle<CR>
-au FileType go nmap <Leader>e <Plug>(go-iferr)
-
 " Vim tags
 au FileType ruby nnoremap t <C-]>
 
