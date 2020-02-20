@@ -27,7 +27,6 @@ Plug 'mtth/scratch.vim'
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'benekastah/neomake'
 Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
