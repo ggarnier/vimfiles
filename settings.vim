@@ -86,6 +86,10 @@ let g:go_fmt_options = {'gofmt': '-s'}
 "let g:go_auto_type_info = 1
 let g:go_addtags_transform = "snakecase"
 
+" jedi-vim
+let jedi#smart_auto_mappings = 1
+let g:jedi#goto_command = "t"
+
 let NERDTreeMapOpenVSplit='v'
 
 let g:neocomplete#enable_at_startup = 1

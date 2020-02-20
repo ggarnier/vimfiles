@@ -36,6 +36,9 @@ Plug 'tpope/vim-rhubarb'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 
+" ====== Python ==========
+Plug 'davidhalter/jedi-vim'
+
 " ====== JS ==========
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
