@@ -37,6 +37,7 @@ Plug 'Shougo/neosnippet-snippets'
 
 " ====== Python ==========
 Plug 'davidhalter/jedi-vim'
+Plug 'psf/black'
 
 " ====== JS ==========
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
