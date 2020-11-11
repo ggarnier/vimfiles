@@ -40,7 +40,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'psf/black'
 
 " ====== JS ==========
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Add plugins to &runtimepath
 call plug#end()
