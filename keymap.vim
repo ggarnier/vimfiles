@@ -150,6 +150,11 @@ nmap <silent> <leader>r <Plug>(coc-references)
 nmap <silent> [e <Plug>(coc-diagnostic-prev)
 nmap <silent> ]e <Plug>(coc-diagnostic-next)
 nmap <silent> <leader>n <Plug>(coc-rename)
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+set hidden
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
 
 " Vim tags
 au FileType ruby nnoremap t <C-]>

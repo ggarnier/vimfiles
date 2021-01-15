@@ -112,6 +112,3 @@ so ~/.config/nvim/settings.vim
 
 " =============== Keymapping Initialization ==========
 so ~/.config/nvim/keymap.vim
-
-" Run black when saving *.py files
-autocmd BufWritePre *.py execute ':Black'
