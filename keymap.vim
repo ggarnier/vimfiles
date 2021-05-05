@@ -155,7 +155,7 @@ set hidden
 set cmdheight=2
 set updatetime=300
 set shortmess+=c
-let g:coc_global_extensions = ['coc-jedi', 'coc-tsserver']
+let g:coc_global_extensions = ['coc-jedi', 'coc-json', 'coc-tsserver', 'coc-yaml']
 
 " Vim tags
 au FileType ruby nnoremap t <C-]>
