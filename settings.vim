@@ -64,7 +64,7 @@ map <Leader>k <Plug>(easymotion-k)
 
 " CTRL P
 let g:ctrlp_custom_ignore = 'deps\|_build\|vendor\|node_modules\|coverage'
-let g:ctrlsf_ackprg = 'ripgrep.rg'
+let g:ctrlsf_ackprg = 'rg'
 
 " Vim Go
 let g:go_highlight_functions = 1
