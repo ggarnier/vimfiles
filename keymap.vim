@@ -155,7 +155,26 @@ set hidden
 set cmdheight=2
 set updatetime=300
 set shortmess+=c
-let g:coc_global_extensions = ['coc-jedi', 'coc-json', 'coc-tsserver', 'coc-yaml']
+let g:coc_global_extensions = ['coc-go', 'coc-jedi', 'coc-json', 'coc-tsserver', 'coc-yaml']
+" Use <tab> and <S-tab> to navigate completion list:
+function! CheckBackSpace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+" Insert <tab> when previous text is space, refresh completion if not.
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1):
+      \ CheckBackSpace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+" Use <c-space> to trigger completion:
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+" Use <CR> to confirm completion
+inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
 
 " Vim tags
 au FileType ruby nnoremap t <C-]>

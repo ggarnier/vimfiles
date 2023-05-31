@@ -127,3 +127,7 @@ endfunction
 function Multiple_cursors_after()
   let g:deoplete#disable_auto_complete = 0
 endfunction
+
+
+" coc-go / gopls
+autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
