@@ -32,6 +32,7 @@ Plug 'tpope/vim-rhubarb'
 
 " ====== IDE like features ==========
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'github/copilot.vim'
 
 " Add plugins to &runtimepath
 call plug#end()

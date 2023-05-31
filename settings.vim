@@ -2,7 +2,7 @@
 set t_Co=256
 
 set background=dark
-set nohlsearch
+set hlsearch
 silent! color monokai
 set cursorline
 set mouse=a
