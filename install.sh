@@ -14,17 +14,12 @@ case "$(uname -s)" in
     sudo apt-get install -y software-properties-common
     sudo add-apt-repository -y ppa:neovim-ppa/unstable
     sudo apt-get update -y
-    sudo apt-get install -y neovim python3-dev python3-pip
-    if [ `which npm` ]; then
-      npm install -g neovim
-    fi
+    sudo apt-get install -y neovim
     ;;
   *)
     echo 'OS not detected'
     ;;
 esac
-
-sudo pip3 install --upgrade pip neovim
 
 echo "====> Downloading vimfiles"
 mkdir -p ~/.config

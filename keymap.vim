@@ -6,8 +6,8 @@ let mapleader = ","
 imap jk <ESC>
 nnoremap ; :
 
-" Paste mode
-set pastetoggle=<Leader>p
+" Paste mode - REMOVED IN NEOVIM 0.9: https://neovim.io/doc/user/news-0.9.html
+" set pastetoggle=<Leader>p
 
 " Search
 nmap <Space> /
